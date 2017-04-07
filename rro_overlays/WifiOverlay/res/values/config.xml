@@ -95,4 +95,7 @@
 
     <integer translatable="false" name="config_wifi_framework_wifi_score_good_rssi_threshold_5GHz">-70</integer>
     <integer translatable="false" name="config_wifi_framework_wifi_score_good_rssi_threshold_24GHz">-60</integer>
+
+    <!-- Default access point SSID used for tethering -->
+    <string name="wifi_tether_configure_ssid_default" translatable="false">OnePlus 6T</string>
 </resources>
