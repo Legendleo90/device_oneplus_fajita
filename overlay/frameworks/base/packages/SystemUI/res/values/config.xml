@@ -26,9 +26,6 @@
     <!-- The radius of the enrollment progress bar, in dp -->
     <integer name="config_udfpsEnrollProgressBar" translatable="false">92</integer>
 
-    <!-- the padding on the top of the statusbar (usually 0) -->
-    <dimen name="status_bar_padding_top">18px</dimen>
-
     <!-- Doze: does this device support STATE_DOZE?  -->
     <bool name="doze_display_state_supported">true</bool>
 
@@ -51,4 +48,7 @@
 
     <!-- FPSInfoService FPS node file path -->
     <string name="config_fpsInfoSysNode" translatable="false">/sys/class/drm/sde-crtc-0/measured_fps</string>
+
+    <!-- If true, the statusbar & nav bar will also be shifted around. -->
+    <bool name="config_enableBurnInProtection">true</bool>
 </resources>
