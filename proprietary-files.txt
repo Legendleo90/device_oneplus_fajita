@@ -2,6 +2,15 @@
 
 # ACDB
 vendor/etc/acdbdata/adsp_avs_config.acdb
+odm/etc/acdbdata/MTP/MTP_Bluetooth_cal.acdb
+odm/etc/acdbdata/MTP/MTP_Codec_cal.acdb
+odm/etc/acdbdata/MTP/MTP_General_cal.acdb
+odm/etc/acdbdata/MTP/MTP_Global_cal.acdb
+odm/etc/acdbdata/MTP/MTP_Handset_cal.acdb
+odm/etc/acdbdata/MTP/MTP_Hdmi_cal.acdb
+odm/etc/acdbdata/MTP/MTP_Headset_cal.acdb
+odm/etc/acdbdata/MTP/MTP_Speaker_cal.acdb
+odm/etc/acdbdata/MTP/MTP_workspaceFile.qwsp
 
 # ADSP
 vendor/bin/adsprpcd
@@ -61,6 +70,9 @@ vendor/lib/libdiracgefwrapper.so
 vendor/lib/libopf.so
 vendor/lib/libqtigef.so
 vendor/lib64/libadsprpc.so
+
+# Audio
+vendor/etc/firmware/tfa98xx.cnt
 
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
@@ -197,6 +209,13 @@ vendor/lib/libvidhance.so
 vendor/lib/vendor.oneplus.hardware.camera@1.0.so
 vendor/lib64/vendor.oneplus.hardware.CameraMDMHIDL@1.0.so
 vendor/lib64/vendor.oneplus.hardware.camera@1.0.so
+vendor/lib/camera/oneplus6_vstab_db_0_1080p_video_30fps.config
+vendor/lib/camera/oneplus6_vstab_db_0_1080p_video_60fps.config
+vendor/lib/camera/oneplus6_vstab_db_0_4k_video_30fps.config
+vendor/lib/camera/oneplus6_vstab_db_0_720p_video_30fps.config
+vendor/lib/camera/oneplus6_vstab_db_1_1080p_video_30fps.config
+vendor/lib/camera/oneplus6_vstab_db_1_720p_video_30fps.config
+vendor/lib/hw/camera.qcom.so
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.elf
@@ -377,6 +396,11 @@ vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc
 vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so
 vendor/lib64/vendor.qti.esepowermanager@1.0.so
 vendor/lib64/vendor.qti.esepowermanager@1.1.so
+
+# Fingerprint
+vendor/lib64/hw/goodix.fod.sdm845.so
+vendor/lib64/fp_hal_extension.so
+vendor/lib64/libgf_ud_hal.so
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -585,6 +609,9 @@ vendor/etc/msm_irqbalance.conf
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
+vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
+vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
+vendor/lib64/libqtikeymaster4.so
 
 # Listen
 vendor/lib/hw/sound_trigger.primary.sdm845.so
@@ -619,6 +646,9 @@ vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
 vendor/etc/libese-nxp.conf
 vendor/etc/libnfc-nxp.conf
 vendor/lib/libpn553_fw.so
+
+# ODM feature list
+odm/etc/odm_feature_list
 
 # OMX
 vendor/lib/libAlacSwDec.so
@@ -1037,6 +1067,10 @@ vendor/lib64/libssc.so
 vendor/lib64/libssc_default_listener.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
+vendor/etc/sensors/config/sdm845_ak991x_0.json
+vendor/etc/sensors/config/sdm845_bmi160_0.json
+vendor/etc/sensors/config/sdm845_lsm6ds3c_0.json
+vendor/etc/sensors/config/sdm845_stk36xx_0.json
 
 # Snapdragon Computer Vision Engine
 vendor/lib/libfastcvdsp_stub.so
@@ -1062,6 +1096,9 @@ vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
+
+# Touchscreen
+vendor/etc/firmware/tp/fw_synaptics_18801.img
 
 # Thermal engine
 vendor/bin/thermal-engine

@@ -14,10 +14,10 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.lineage.livedisplay@2.1-service.oneplus_sdm845",
+    name: "vendor.lineage.livedisplay@2.1-service.oneplus_fajita",
     defaults: ["hidl_defaults"],
-    init_rc: ["vendor.lineage.livedisplay@2.1-service.oneplus_sdm845.rc"],
-    vintf_fragments: ["vendor.lineage.livedisplay@2.1-service.oneplus_sdm845.xml"],
+    init_rc: ["vendor.lineage.livedisplay@2.1-service.oneplus_fajita.rc"],
+    vintf_fragments: ["vendor.lineage.livedisplay@2.1-service.oneplus_fajita.xml"],
     relative_install_path: "hw",
     srcs: [
         ":vendor.lineage.livedisplay@2.0-sdm-pa",
