@@ -487,5 +487,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
+# UDFPS
+TARGET_HAS_UDFPS := true
+
 # Inherit from vendor blobs
 $(call inherit-product, vendor/oneplus/fajita/fajita-vendor.mk)
