@@ -1,5 +1,6 @@
 #
 # Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2023 The Project Elixir
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,10 +22,23 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from fajita device
 $(call inherit-product, device/oneplus/fajita/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Project Elixir stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_fajita
+# Bootanimation
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Project-Elixir Official Stuff
+ELIXIR_BUILD_TYPE := OFFICIAL
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := false
+TARGET_INCLUDE_STOCK_ACORE := false
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_ENABLE_BLUR := false
+
+# Device Identifier
+PRODUCT_NAME := aosp_fajita
 PRODUCT_DEVICE := fajita
 PRODUCT_MANUFACTURER := OnePlus
 PRODUCT_BRAND := OnePlus
