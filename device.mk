@@ -495,9 +495,5 @@ PRODUCT_BOOT_JARS += \
 # UDFPS
 TARGET_HAS_UDFPS := true
 
-# WiFi
-PRODUCT_PACKAGES += \
-    TargetWifiOverlay
-
 # Inherit from vendor blobs
 $(call inherit-product, vendor/oneplus/fajita/fajita-vendor.mk)
